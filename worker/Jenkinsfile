@@ -32,6 +32,7 @@ pipeline {
             when {
                 branch 'master'
                 changeset "**/worker/**"
+            }
             steps {
                 echo 'Packaging worker app'
                 dir('worker') {
